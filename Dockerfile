@@ -7,7 +7,7 @@ ADD . /go/src/github.com/cosmo0920/fluent-bit-go-s3
 WORKDIR /go/src/github.com/cosmo0920/fluent-bit-go-s3
 RUN make build
 
-FROM fluent/fluent-bit:1.5.4
+FROM fluent/fluent-bit:1.5.4-debug
 LABEL Description="Fluent Bit Go S3" FluentBitVersion="1.5.4"
 
 MAINTAINER Hiroshi Hatake <cosmo0920.wp[at]gmail.com>
