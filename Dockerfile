@@ -17,4 +17,4 @@ COPY docker/fluent-bit-s3.conf \
 EXPOSE 2020
 
 # Entry point
-CMD ["/fluent-bit/bin/fluent-bit", "-c", "/fluent-bit/etc/fluent-bit-s3.conf", "-e", "/usr/lib/x86_64-linux-gnu/out_s3.so"]
+CMD ["/fluent-bit/bin/fluent-bit", "-c", "/fluent-bit/etc/fluent-bit.conf", "-e", "/usr/lib/x86_64-linux-gnu/out_s3.so"]
